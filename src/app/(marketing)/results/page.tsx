@@ -34,14 +34,14 @@ function getRecommendation(
     return {
       title: "You're Ready for Funding",
       description:
-        "Your fundability profile is strong. Let's connect you with the right funding sources and maximize your capital acquisition. A strategy call will map out your fastest path to funding.",
-      cta: "Book Your Free Strategy Call",
-      ctaHref: "#book",
-      icon: Calendar,
+        "Your fundability profile is strong. Get both guides to lock in your credit and business structure — then let's connect you with real capital.",
+      cta: "Get the Complete Bundle — $47",
+      ctaHref: "/services#products",
+      icon: Download,
       products: [
-        "Personalized funding roadmap",
-        "Direct lender introductions",
-        "Capital acquisition strategy",
+        "The Fundability Reset (credit repair system)",
+        "The Fundable Business Blueprint (business structure)",
+        "Save 50% with the bundle",
       ],
     };
   }
@@ -50,14 +50,14 @@ function getRecommendation(
     return {
       title: "You're Almost There",
       description:
-        "You're close to being fully fundable. A few targeted adjustments will unlock the capital you need. Let's build your personalized action plan.",
-      cta: "Book Your Free Strategy Call",
-      ctaHref: "#book",
-      icon: Calendar,
+        "You're close to being fully fundable. A few targeted adjustments to your business structure will unlock the capital you need.",
+      cta: "Get The Fundable Business Blueprint — $27",
+      ctaHref: "/services#products",
+      icon: BookOpen,
       products: [
-        "Fundability Blueprint guide",
-        "Personalized action plan",
-        "1-on-1 strategy session",
+        "LLC formation & EIN setup guide",
+        "Business credit building roadmap",
+        "Lender-ready structure checklist",
       ],
     };
   }
@@ -66,14 +66,14 @@ function getRecommendation(
     return {
       title: "Let's Fix Your Credit First",
       description:
-        "Your credit is the #1 thing holding you back from funding. The good news? It's fixable. Our Credit Repair Guide shows you exactly how to clean up and build your score — fast.",
-      cta: "Get the Credit Repair Guide",
-      ctaHref: "#products",
+        "Your credit is the #1 thing holding you back from funding. The good news? It's fixable. The Fundability Reset shows you exactly how to clean up and build your score — fast.",
+      cta: "Get The Fundability Reset — $27",
+      ctaHref: "/services#products",
       icon: Download,
       products: [
         "Step-by-step credit repair system",
-        "Derogatory removal tactics",
-        "Score-building strategies",
+        "Derogatory mark removal tactics",
+        "Score optimization for funding approval",
       ],
     };
   }
@@ -82,14 +82,14 @@ function getRecommendation(
     return {
       title: "You Need the Right Structure",
       description:
-        "Banks won't fund what they can't verify. You need an LLC, EIN, and business bank account — set up the right way. Our Business Structure Blueprint walks you through every step.",
-      cta: "Get the Business Structure Blueprint",
-      ctaHref: "#products",
+        "Banks won't fund what they can't verify. You need an LLC, EIN, and business bank account — set up the right way. The Fundable Business Blueprint walks you through every step.",
+      cta: "Get The Fundable Business Blueprint — $27",
+      ctaHref: "/services#products",
       icon: BookOpen,
       products: [
         "LLC formation guide",
-        "EIN & bank account setup",
-        "Business credit building roadmap",
+        "EIN & business bank account setup",
+        "Business credit file establishment",
       ],
     };
   }
@@ -98,14 +98,14 @@ function getRecommendation(
     return {
       title: "Let's Get You Approved",
       description:
-        "Being denied isn't the end — it's data. The Fundability Blueprint shows you exactly what lenders look for and how to position yourself for approval on your next application.",
-      cta: "Get the Fundability Blueprint",
-      ctaHref: "#products",
-      icon: BookOpen,
+        "Being denied isn't the end — it's data. Your credit and structure both need work. Get the complete bundle to fix your foundation from both sides.",
+      cta: "Get the Complete Bundle — $47",
+      ctaHref: "/services#products",
+      icon: Download,
       products: [
-        "Lender approval criteria breakdown",
-        "Application positioning strategy",
-        "Data point optimization guide",
+        "The Fundability Reset (fix your credit)",
+        "The Fundable Business Blueprint (fix your structure)",
+        "Save 50% with the bundle",
       ],
     };
   }
@@ -114,14 +114,14 @@ function getRecommendation(
   return {
     title: "Here's Your Starting Point",
     description:
-      "Every wealth journey starts with the first step. Our Starter Guide gives you the exact playbook to go from zero to fundable — structure first, capital second, wealth third.",
-    cta: "Get the Starter Guide",
-    ctaHref: "#products",
+      "Every wealth journey starts with the first step. Get both guides to build your credit and business structure the right way — from zero to fundable.",
+    cta: "Get the Complete Bundle — $47",
+    ctaHref: "/services#products",
     icon: Download,
     products: [
-      "Complete beginner's roadmap",
-      "Business formation checklist",
-      "Funding readiness framework",
+      "The Fundability Reset (credit repair)",
+      "The Fundable Business Blueprint (business structure)",
+      "Save 50% with the bundle",
     ],
   };
 }

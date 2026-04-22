@@ -74,24 +74,22 @@ const services = [
 
 const products = [
   {
-    title: "Credit Repair Guide",
-    description: "Step-by-step system to clean up and build your credit.",
+    title: "The Fundability Reset",
+    subtitle: "How to Fix Personal Credit to Unlock Business Capital",
+    description:
+      "Step-by-step system to clean up your personal credit, remove derogatory marks, and position yourself to qualify for real business funding.",
+    price: "$27",
+    value: "$47",
     icon: Shield,
   },
   {
-    title: "Business Structure Blueprint",
-    description: "Complete guide to forming and funding your business entity.",
+    title: "The Fundable Business Blueprint",
+    subtitle: "Build a Business Structure That Lenders Actually Fund",
+    description:
+      "Complete guide to forming your LLC, building business credit, and creating the structure lenders look for before they approve funding.",
+    price: "$27",
+    value: "$47",
     icon: Building2,
-  },
-  {
-    title: "Fundability Blueprint",
-    description: "Everything lenders look for and how to check every box.",
-    icon: BookOpen,
-  },
-  {
-    title: "Starter Guide",
-    description: "The complete beginner's roadmap from zero to fundable.",
-    icon: Crown,
   },
 ];
 
@@ -198,33 +196,44 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {products.map((product) => {
               const Icon = product.icon;
               return (
                 <div
                   key={product.title}
-                  className="bg-white rounded-2xl border border-border p-6 hover:shadow-lg hover:shadow-royal/5 transition-all hover:-translate-y-1"
+                  className="bg-white rounded-2xl border border-border p-8 hover:shadow-lg hover:shadow-royal/5 transition-all hover:-translate-y-1"
                 >
-                  <div className="w-12 h-12 bg-royal/10 rounded-xl flex items-center justify-center mb-4">
-                    <Icon size={22} className="text-royal" />
+                  <div className="w-14 h-14 bg-royal/10 rounded-xl flex items-center justify-center mb-5">
+                    <Icon size={24} className="text-royal" />
                   </div>
-                  <h3 className="font-bold text-dark mb-2">
+                  <h3 className="text-xl font-bold text-dark mb-1">
                     {product.title}
                   </h3>
-                  <p className="text-muted text-sm leading-relaxed mb-4">
+                  <p className="text-gold text-sm font-medium mb-3">
+                    {product.subtitle}
+                  </p>
+                  <p className="text-muted leading-relaxed mb-6">
                     {product.description}
                   </p>
-                  <span className="text-gold font-semibold text-sm">
-                    Coming Soon
-                  </span>
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="text-2xl font-bold text-dark">
+                      {product.price}
+                    </span>
+                    <span className="text-muted line-through text-sm">
+                      {product.value}
+                    </span>
+                  </div>
+                  <button className="w-full gradient-gold text-royal-dark font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]">
+                    Get Instant Access
+                  </button>
                 </div>
               );
             })}
           </div>
 
           {/* Bundle */}
-          <div className="mt-10 bg-white rounded-2xl border-2 border-gold/30 p-8 flex flex-col md:flex-row items-center gap-6">
+          <div className="mt-10 max-w-4xl mx-auto bg-white rounded-2xl border-2 border-gold/30 p-8 flex flex-col md:flex-row items-center gap-6">
             <div className="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center shrink-0">
               <Crown size={28} className="text-royal-dark" />
             </div>
@@ -233,13 +242,20 @@ export default function ServicesPage() {
                 The Complete Bundle
               </h3>
               <p className="text-muted">
-                Get all four guides at a discount. Everything you need from
-                zero to funded.
+                Get both guides and save. Everything you need from credit
+                repair to business funding — in one package.
               </p>
+              <div className="flex items-center gap-3 mt-2">
+                <span className="text-2xl font-bold text-dark">$47</span>
+                <span className="text-muted line-through text-sm">$94</span>
+                <span className="text-green-600 text-sm font-semibold">
+                  Save 50%
+                </span>
+              </div>
             </div>
-            <span className="text-gold font-bold text-lg whitespace-nowrap">
-              Coming Soon
-            </span>
+            <button className="gradient-gold text-royal-dark font-bold px-8 py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0">
+              Get the Bundle
+            </button>
           </div>
         </div>
       </section>
