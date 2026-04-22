@@ -11,6 +11,11 @@ import {
   Crown,
   Users,
 } from "lucide-react";
+import {
+  CreditIllustration,
+  StructureIllustration,
+  FundingIllustration,
+} from "@/components/ServiceIllustrations";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -163,17 +168,11 @@ export default function ServicesPage() {
                   </Link>
                 </div>
 
-                {/* Visual placeholder */}
-                <div
-                  className="aspect-video rounded-2xl bg-surface border border-border flex items-center justify-center"
-                  style={isEven ? { direction: "ltr" } : undefined}
-                >
-                  <div className="text-center">
-                    <Icon size={48} className="text-border mx-auto mb-3" />
-                    <p className="text-muted/50 text-sm">
-                      Service illustration
-                    </p>
-                  </div>
+                {/* Service illustration */}
+                <div style={isEven ? { direction: "ltr" } : undefined}>
+                  {service.id === "credit" && <CreditIllustration />}
+                  {service.id === "structure" && <StructureIllustration />}
+                  {service.id === "funding" && <FundingIllustration />}
                 </div>
               </div>
             );
