@@ -12,7 +12,7 @@ export default function MarketingLayout({
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5">
             <img
-              src="/logo-lion.png"
+              src="/logo.png"
               alt="Topnoch Wealth Enterprises LLC"
               className="w-11 h-11 object-contain drop-shadow-md"
             />

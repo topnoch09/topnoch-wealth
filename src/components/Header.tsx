@@ -36,7 +36,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
           <Image
-            src="/logo-lion.png"
+            src="/logo.png"
             alt="Topnoch Wealth Enterprises LLC"
             width={44}
             height={44}

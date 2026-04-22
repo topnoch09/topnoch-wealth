@@ -59,7 +59,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
               <img
-                src="/logo-lion.png"
+                src="/logo.png"
                 alt="Topnoch Wealth Enterprises LLC"
                 className="w-11 h-11 object-contain brightness-0 invert"
               />
