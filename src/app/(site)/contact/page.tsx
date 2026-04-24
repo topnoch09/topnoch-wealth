@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Mail,
   Calendar,
@@ -22,6 +22,8 @@ const socialLinks = [
   { label: "YouTube", href: "https://www.youtube.com/@mauricecoleman1914", icon: YouTubeIcon },
 ];
 
+const GHL_CALENDAR_ID = process.env.NEXT_PUBLIC_GHL_CALENDAR_ID;
+
 export default function ContactPage() {
   const [formState, setFormState] = useState<
     "idle" | "submitting" | "success"
@@ -33,6 +35,17 @@ export default function ContactPage() {
     subject: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (!GHL_CALENDAR_ID) return;
+    const script = document.createElement("script");
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
+    script.type = "text/javascript";
+    document.body.appendChild(script);
+    return () => {
+      script.remove();
+    };
+  }, []);
 
   function handleChange(
     e: React.ChangeEvent<
@@ -228,12 +241,22 @@ export default function ContactPage() {
                   30-minute 1-on-1 with Maurice. We&apos;ll assess your
                   situation and build your plan.
                 </p>
-                {/* GHL booking calendar will be embedded here */}
-                <div className="bg-white rounded-xl border border-border p-6 text-center text-muted text-sm">
-                  <Calendar size={32} className="mx-auto mb-2 text-border" />
-                  <p>Booking calendar</p>
-                  <p className="text-xs mt-1">(GHL embed)</p>
-                </div>
+                {GHL_CALENDAR_ID ? (
+                  <iframe
+                    src={`https://api.leadconnectorhq.com/widget/booking/${GHL_CALENDAR_ID}`}
+                    className="w-full min-h-[600px] rounded-xl"
+                    style={{ border: "none", overflow: "hidden" }}
+                    scrolling="no"
+                    id={`ghl-calendar`}
+                  />
+                ) : (
+                  <a
+                    href="mailto:info@topnochwealth.com?subject=Book%20a%20Strategy%20Call"
+                    className="block w-full gradient-gold text-royal-dark font-bold py-3.5 rounded-xl text-center transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    Email to Book a Call
+                  </a>
+                )}
               </div>
 
               {/* Email */}
