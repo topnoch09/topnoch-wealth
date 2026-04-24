@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet Maurice Coleman — entrepreneur, financial strategist, and founder of Topnoch Wealth Enterprises LLC. Learn our mission and why we do what we do.",
+    "Meet Maurice L. Coleman — entrepreneur, financial strategist, and founder of Topnoch Wealth Enterprises LLC. Learn our mission and why we do what we do.",
 };
 
 const values = [
@@ -65,7 +65,7 @@ export default function AboutPage() {
             <div className="aspect-[4/5] max-w-md mx-auto w-full rounded-2xl overflow-hidden">
               <img
                 src="/maurice-coleman.png"
-                alt="Maurice Coleman"
+                alt="Maurice L. Coleman"
                 className="w-full h-full object-cover object-top"
               />
             </div>
@@ -75,11 +75,11 @@ export default function AboutPage() {
                 The Founder
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-dark mb-6">
-                Maurice Coleman
+                Maurice L. Coleman
               </h2>
               <div className="space-y-4 text-muted text-lg leading-relaxed">
                 <p>
-                  Maurice Coleman is an entrepreneur and financial strategist
+                  Maurice L. Coleman is an entrepreneur and financial strategist
                   who has dedicated his career to helping fellow entrepreneurs
                   navigate the complex world of business funding.
                 </p>

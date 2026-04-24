@@ -349,7 +349,7 @@ export default function HomePage() {
                 Meet Your Coach
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Maurice Coleman
+                Maurice L. Coleman
               </h2>
               <p className="text-white/70 text-lg leading-relaxed mb-6">
                 Entrepreneur, financial strategist, and founder of Topnoch
@@ -375,7 +375,7 @@ export default function HomePage() {
               <div className="aspect-square max-w-md mx-auto rounded-2xl overflow-hidden border-2 border-white/15">
                 <img
                   src="/maurice-coleman.png"
-                  alt="Maurice Coleman"
+                  alt="Maurice L. Coleman"
                   className="w-full h-full object-cover object-top"
                 />
               </div>

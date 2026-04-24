@@ -89,7 +89,7 @@ const products = [
   },
   {
     title: "The Fundable Business Blueprint",
-    subtitle: "Build a Business Structure That Lenders Actually Fund",
+    subtitle: "How to Access $50K to $250K in Funding Without Traditional Banks",
     description:
       "Complete guide to forming your LLC, building business credit, and creating the structure lenders look for before they approve funding.",
     price: "$27",

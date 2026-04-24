@@ -122,7 +122,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 rounded-xl border border-border bg-surface text-dark focus:outline-none focus:border-royal focus:ring-2 focus:ring-royal/10 transition-all"
-                        placeholder="Maurice Coleman"
+                        placeholder="Maurice L. Coleman"
                       />
                     </div>
                     <div>
