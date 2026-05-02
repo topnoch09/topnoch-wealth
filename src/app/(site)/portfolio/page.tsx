@@ -149,7 +149,7 @@ export default function PortfolioPage() {
             Take the free Fundability Assessment and see where you stand.
           </p>
           <Link
-            href="/fundability"
+            href="/assessment"
             className="inline-flex items-center gap-2 gradient-gold text-royal-dark font-bold px-10 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
           >
             Start Free Assessment <ArrowRight size={20} />

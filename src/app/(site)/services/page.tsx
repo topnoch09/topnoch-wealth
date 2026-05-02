@@ -16,6 +16,7 @@ import {
   StructureIllustration,
   FundingIllustration,
 } from "@/components/ServiceIllustrations";
+import { CheckoutButton } from "@/components/ProductCheckout";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -73,7 +74,7 @@ const services = [
       "Business line of credit strategies",
     ],
     cta: "Book a Strategy Call",
-    href: "/contact",
+    href: "/strategy",
   },
 ];
 
@@ -86,6 +87,7 @@ const products = [
     price: "$27",
     value: "$47",
     icon: Shield,
+    productKey: "reset",
   },
   {
     title: "The Fundable Business Blueprint",
@@ -95,6 +97,7 @@ const products = [
     price: "$27",
     value: "$47",
     icon: Building2,
+    productKey: "blueprint",
   },
 ];
 
@@ -223,9 +226,12 @@ export default function ServicesPage() {
                       {product.value}
                     </span>
                   </div>
-                  <button className="w-full gradient-gold text-royal-dark font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]">
+                  <CheckoutButton
+                    product={product.productKey}
+                    className="w-full gradient-gold text-royal-dark font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
+                  >
                     Get Instant Access
-                  </button>
+                  </CheckoutButton>
                 </div>
               );
             })}
@@ -252,9 +258,12 @@ export default function ServicesPage() {
                 </span>
               </div>
             </div>
-            <button className="gradient-gold text-royal-dark font-bold px-8 py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0">
+            <CheckoutButton
+              product="bundle"
+              className="gradient-gold text-royal-dark font-bold px-8 py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0"
+            >
               Get the Bundle
-            </button>
+            </CheckoutButton>
           </div>
         </div>
       </section>
@@ -274,7 +283,7 @@ export default function ServicesPage() {
             action plan.
           </p>
           <Link
-            href="/contact"
+            href="/strategy"
             className="inline-flex items-center gap-2 gradient-gold text-royal-dark font-bold px-10 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
           >
             Book Free Strategy Call <ArrowRight size={20} />

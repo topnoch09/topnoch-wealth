@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Contact", href: "/contact" },
+  { label: "Strategy Call", href: "/strategy" },
 ];
 
 export default function Header() {
@@ -74,7 +74,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/fundability"
+            href="/assessment"
             className="gradient-gold text-royal-dark font-semibold px-6 py-2.5 rounded-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-105 active:scale-95"
           >
             Free Assessment
@@ -112,7 +112,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/fundability"
+              href="/assessment"
               onClick={() => setIsOpen(false)}
               className="block gradient-gold text-royal-dark font-semibold px-6 py-3.5 rounded-lg text-center mt-4 hover:shadow-lg"
             >

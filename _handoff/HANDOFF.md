@@ -54,10 +54,6 @@ SSL is handled automatically by Vercel.
 | `NEXT_PUBLIC_GHL_CALENDAR_ID` | GHL calendar embed (`YrvCpy7Ksoj8vLN3PbfE`) |
 | `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe checkout (client-side) |
 | `STRIPE_SECRET_KEY` | Stripe API + session verification (server) |
-| `RESEND_API_KEY` | Resend transactional email API |
-| `RESEND_FROM_EMAIL` | Sender for outbound emails (e.g. `Topnoch Wealth <hello@topnochwealth.com>`) |
-| `NOTIFY_EMAIL` | Internal notification recipient (Maurice's inbox) |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 ID (e.g. `G-XXXXXXX`) — analytics auto-disabled if blank |
 
 ### Deploying
 
@@ -238,56 +234,10 @@ curl -X POST -H "Authorization: Bearer <vercel_token>" \
 
 ---
 
-## 11. Email automation (Resend)
+## 11. Outstanding items
 
-The site sends transactional emails directly via Resend (independent of GHL workflows, which require UI configuration that GHL's API doesn't expose).
-
-### Email triggers
-
-| Event | Recipient | What they get |
-|-------|-----------|---------------|
-| Assessment submitted | Lead | Branded email with their score + CTA to book a strategy call |
-| Assessment submitted | Maurice (`NOTIFY_EMAIL`) | Lead notification with all answers |
-| Contact form submitted | Lead | Acknowledgement with strategy call CTA |
-| Contact form submitted | Maurice | Full message + reply-to set to lead's address |
-| Purchase completed | Buyer | Branded download links + booking CTA |
-| Purchase completed | Maurice | Sale notification with amount + product |
-
-### Implementation
-
-- Helper: `src/lib/email.ts` — exports `sendAssessmentEmails`, `sendContactEmails`, `sendPurchaseEmails`
-- API routes: `src/app/api/assessment/route.ts` and `src/app/api/contact/route.ts` — fan out to GHL webhook + Resend in parallel
-- Purchase emails fire from `src/app/(site)/thank-you/page.tsx` after Stripe session verification (idempotency via session metadata `email_sent`)
-
-### Disabling
-
-If `RESEND_API_KEY` is blank, all email sends are silently skipped — the GHL webhook still fires and the site continues to function. This is the failsafe.
-
-### Domain verification (Resend)
-
-For emails to come from `@topnochwealth.com`, the domain must be verified in Resend:
-1. Resend dashboard → **Domains → Add Domain → topnochwealth.com**
-2. Resend gives 3 DNS records (SPF, DKIM, DMARC)
-3. Add them in Squarespace DNS
-4. Click **Verify** in Resend
-
-Until verified, emails fall back to `onboarding@resend.dev` as the sender (still works, just doesn't look branded).
-
----
-
-## 12. SEO & analytics
-
-- **`/sitemap.xml`** — auto-generated from `src/app/sitemap.ts`
-- **`/robots.txt`** — auto-generated from `src/app/robots.ts`; disallows `/api/`, `/thank-you/`, `/results/`, `/ebooks/`
-- **OG image** — `public/og-image.png` (1200x630, brand-styled). Regenerable via `_tools/generate_og_image.py`
-- **Open Graph + Twitter Card meta** — set in `src/app/layout.tsx`, with per-page overrides where defined
-- **Google Analytics 4** — set `NEXT_PUBLIC_GA_MEASUREMENT_ID` env var (format `G-XXXXXXX`) and analytics auto-loads. Leave blank to disable. Maurice can grab the ID from analytics.google.com after creating a property for `topnochwealth.com`.
-
----
-
-## 13. Outstanding items
+These were discussed during the build but not implemented:
 
 - **Custom video section** — currently the homepage video is in the standard "A Word From Maurice" layout. If a fully custom design is requested, that's a follow-up.
-- **GHL → Stripe automation** — purchase tracking lives in Stripe + the post-purchase email. If Maurice wants buyer tags in GHL, add a Stripe webhook → GHL workflow.
-- **Resend domain verification** — needs Maurice to add 3 DNS records in Squarespace once Resend account exists.
-- **GA4 setup** — needs Maurice to create a GA4 property and provide the measurement ID.
+- **GHL → Stripe automation** — currently lead capture and purchase tracking are independent. Could integrate Stripe webhooks → GHL contact tagging if Maurice wants buyer/lead segmentation.
+- **Email delivery for ebooks** — currently relies on the `/thank-you` page. Adding an automated email with the download link via GHL or Resend would give buyers a permanent record.

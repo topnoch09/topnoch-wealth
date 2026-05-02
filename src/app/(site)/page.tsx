@@ -70,7 +70,7 @@ const services = [
     description:
       "30-minute strategy call to assess your situation, identify gaps, and create an action plan tailored to your goals.",
     icon: Calendar,
-    href: "/contact",
+    href: "/strategy",
   },
 ];
 
@@ -138,7 +138,7 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/fundability"
+                href="/assessment"
                 className="inline-flex items-center justify-center gap-2 gradient-gold text-royal-dark font-bold px-8 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
               >
                 Take Free Assessment
@@ -167,6 +167,40 @@ export default function HomePage() {
                 <span>Proven Framework</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ INTRO VIDEO ══════ */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">
+              A Word From Maurice
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+              Watch How We Help You Get Funded
+            </h2>
+            <p className="text-muted text-lg">
+              60 seconds with Maurice — what we do, who we help, and how we get
+              you to capital the right way.
+            </p>
+          </div>
+
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-royal/20 border border-border bg-royal-dark mx-auto max-w-[360px]">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="auto"
+              className="w-full h-auto block max-h-[640px] object-contain"
+              poster="/maurice-coleman.png"
+            >
+              <source src="/videos/maurice-intro.mp4" type="video/mp4" />
+              Your browser does not support video playback.
+            </video>
           </div>
         </div>
       </section>
@@ -229,7 +263,7 @@ export default function HomePage() {
             score with a clear roadmap to capital.
           </p>
           <Link
-            href="/fundability"
+            href="/assessment"
             className="inline-flex items-center gap-2 gradient-gold text-royal-dark font-bold px-10 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
           >
             Start My Free Assessment
@@ -395,7 +429,7 @@ export default function HomePage() {
             Just clarity.
           </p>
           <Link
-            href="/fundability"
+            href="/assessment"
             className="inline-flex items-center gap-2 gradient-gold text-royal-dark font-bold px-10 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
           >
             Start My Free Assessment

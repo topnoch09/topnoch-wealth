@@ -59,20 +59,12 @@ export default function ContactPage() {
     e.preventDefault();
     setFormState("submitting");
 
-    // Submit to GHL webhook
     try {
-      const webhookUrl = process.env.NEXT_PUBLIC_GHL_CONTACT_WEBHOOK_URL;
-      if (webhookUrl) {
-        await fetch(webhookUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            ...form,
-            source: "contact-form",
-            timestamp: new Date().toISOString(),
-          }),
-        });
-      }
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
     } catch {
       // Silent fail
     }

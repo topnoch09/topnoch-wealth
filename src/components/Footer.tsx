@@ -11,11 +11,11 @@ const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Testimonials", href: "/testimonials" },
-  { label: "Contact", href: "/contact" },
+  { label: "Strategy Call", href: "/strategy" },
 ];
 
 const serviceLinks = [
-  { label: "Fundability Assessment", href: "/fundability" },
+  { label: "Fundability Assessment", href: "/assessment" },
   { label: "Credit Repair", href: "/services#credit" },
   { label: "Business Structure", href: "/services#structure" },
   { label: "Funding Strategy", href: "/services#funding" },
@@ -44,7 +44,7 @@ export default function Footer() {
             </p>
           </div>
           <Link
-            href="/fundability"
+            href="/assessment"
             className="bg-royal-dark text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-navy transition-colors shrink-0"
           >
             Start Assessment →
@@ -142,7 +142,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/fundability"
+                  href="/assessment"
                   className="hover:text-gold transition-colors"
                 >
                   Free Fundability Assessment

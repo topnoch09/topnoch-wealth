@@ -254,24 +254,18 @@ export default function FundabilityQuiz() {
     const finalAnswers = { ...answers, email };
     const score = calculateScore(finalAnswers);
 
-    // Submit to GHL webhook (will be configured later)
     try {
-      const webhookUrl = process.env.NEXT_PUBLIC_GHL_WEBHOOK_URL;
-      if (webhookUrl) {
-        await fetch(webhookUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email,
-            obstacle: finalAnswers.obstacle,
-            stage: finalAnswers.stage,
-            amount: finalAnswers.amount,
-            score,
-            source: "fundability-assessment",
-            timestamp: new Date().toISOString(),
-          }),
-        });
-      }
+      await fetch("/api/assessment", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          obstacle: finalAnswers.obstacle,
+          stage: finalAnswers.stage,
+          amount: finalAnswers.amount,
+          score,
+        }),
+      });
     } catch {
       // Silent fail — don't block the user experience
     }
