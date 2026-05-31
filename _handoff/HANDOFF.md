@@ -1,4 +1,4 @@
-# Topnoch Wealth — Project Handoff
+# Topnoch Enterprises LLC — Project Handoff
 
 Everything needed to maintain, deploy, and modify this site. Stored in the repo for the next owner/dev.
 
@@ -14,7 +14,7 @@ All services are owned by **Maurice Coleman** under `info@topnochwealth.com`.
 | GitHub | `topnoch09` | info@topnochwealth.com | Maurice (PAT regen if needed) |
 | Vercel | `info-67975496` | info@topnochwealth.com | Maurice (token regen if needed) |
 | Stripe | Live mode active | info@topnochwealth.com | Maurice (Dashboard → Developers → API keys) |
-| GoHighLevel | Topnoch Wealth Ent... | info@topnochwealth.com | Maurice (location ID `ElDZL0NnSc6A9w2OzNBq`) |
+| GoHighLevel | Topnoch Enterprises | info@topnochwealth.com | Maurice (location ID `ElDZL0NnSc6A9w2OzNBq`) |
 
 > **All tokens used during the original build live on the original developer's machine.** Anyone taking over should request fresh tokens directly from Maurice via each platform's "Personal Access Token" / "API Key" interface and store them locally — never commit them to the repo.
 

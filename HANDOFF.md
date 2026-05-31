@@ -1,6 +1,8 @@
-# Topnoch Wealth — Project Handoff
+# Topnoch Enterprises LLC — Project Handoff
 
 Everything needed to maintain, deploy, and modify this site. Stored in the repo for the next owner/dev.
+
+> Brand change (May 2026): company renamed from **Topnoch Wealth Enterprises LLC** → **Topnoch Enterprises LLC**. The domain `topnochwealth.com` is retained, so all URLs, emails, GitHub repo, and Vercel project names remain unchanged.
 
 ---
 
@@ -14,7 +16,7 @@ All services are owned by **Maurice Coleman** under `info@topnochwealth.com`.
 | GitHub | `topnoch09` | info@topnochwealth.com | Maurice (PAT regen if needed) |
 | Vercel | `info-67975496` | info@topnochwealth.com | Maurice (token regen if needed) |
 | Stripe | Live mode active | info@topnochwealth.com | Maurice (Dashboard → Developers → API keys) |
-| GoHighLevel | Topnoch Wealth Ent... | info@topnochwealth.com | Maurice (location ID `ElDZL0NnSc6A9w2OzNBq`) |
+| GoHighLevel | Topnoch Enterprises | info@topnochwealth.com | Maurice (location ID `ElDZL0NnSc6A9w2OzNBq`) |
 
 > **All tokens used during the original build live on the original developer's machine.** Anyone taking over should request fresh tokens directly from Maurice via each platform's "Personal Access Token" / "API Key" interface and store them locally — never commit them to the repo.
 
@@ -55,7 +57,7 @@ SSL is handled automatically by Vercel.
 | `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe checkout (client-side) |
 | `STRIPE_SECRET_KEY` | Stripe API + session verification (server) |
 | `RESEND_API_KEY` | Resend transactional email API |
-| `RESEND_FROM_EMAIL` | Sender for outbound emails (e.g. `Topnoch Wealth <hello@topnochwealth.com>`) |
+| `RESEND_FROM_EMAIL` | Sender for outbound emails (e.g. `Topnoch Enterprises <hello@topnochwealth.com>`) |
 | `NOTIFY_EMAIL` | Internal notification recipient (Maurice's inbox) |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics 4 ID (e.g. `G-XXXXXXX`) — analytics auto-disabled if blank |
 

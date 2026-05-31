@@ -1,4 +1,4 @@
-# Topnoch Wealth — Project Complete
+# Topnoch Enterprises LLC — Project Complete
 
 Hi Maurice — your full website is live and everything is set up under your accounts. Here's what you have.
 
