@@ -37,7 +37,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2.5">
           <Image
             src="/logo.png"
-            alt="Topnoch Wealth Enterprises LLC"
+            alt="Topnoch Enterprises LLC"
             width={44}
             height={44}
             className="w-11 h-11 object-contain drop-shadow-md"
@@ -48,7 +48,7 @@ export default function Header() {
                 scrolled ? "text-royal-dark" : "text-white"
               }`}
             >
-              Topnoch Wealth
+              Topnoch
             </span>
             <span
               className={`text-xs font-semibold tracking-wide transition-colors ${

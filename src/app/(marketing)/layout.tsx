@@ -13,12 +13,12 @@ export default function MarketingLayout({
           <Link href="/" className="flex items-center gap-2.5">
             <img
               src="/logo.png"
-              alt="Topnoch Wealth Enterprises LLC"
+              alt="Topnoch Enterprises LLC"
               className="w-11 h-11 object-contain drop-shadow-md"
             />
             <div className="flex flex-col leading-tight">
               <span className="font-bold text-lg text-white tracking-tight">
-                Topnoch Wealth
+                Topnoch
               </span>
               <span className="text-gold text-xs font-semibold tracking-wide">
                 Enterprises LLC

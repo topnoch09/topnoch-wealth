@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import pathlib
 
 OUT = pathlib.Path(r"C:\Users\ea2en\Projects\top-noch-wealth\public\og-image.png")
-LOGO = pathlib.Path(r"C:\Users\ea2en\Projects\top-noch-wealth\public\logo.png")
+LOGO = pathlib.Path(r"C:\Users\ea2en\Projects\top-noch-wealth\public\logo.png")  # lion-only, transparent bg
 
 W, H = 1200, 630
 royal_dark = (15, 40, 71)
@@ -24,10 +24,20 @@ for y in range(H):
 # gold accent bar
 draw.rectangle([(0, 0), (W, 8)], fill=gold)
 
-# Logo
+# Logo (lion only — will be tinted lighter for contrast against navy bg)
 logo = Image.open(LOGO).convert("RGBA")
-logo.thumbnail((180, 180), Image.LANCZOS)
-img.paste(logo, (80, 80), logo)
+# brighten / tint logo white-ish for contrast on dark bg
+data = logo.getdata()
+new_data = []
+for r, g, b, a in data:
+    if a > 0:
+        # blend toward gold-tinted white based on original brightness
+        new_data.append((255, 255, 255, a))
+    else:
+        new_data.append((0, 0, 0, 0))
+logo.putdata(new_data)
+logo.thumbnail((200, 200), Image.LANCZOS)
+img.paste(logo, (80, 70), logo)
 
 # Try to load a strong font; fall back if missing
 def load_font(size, bold=False):
@@ -45,14 +55,20 @@ def load_font(size, bold=False):
 title_font = load_font(72, bold=True)
 sub_font = load_font(36)
 small_font = load_font(28)
+brand_font = load_font(38, bold=True)
+brand_sub_font = load_font(22, bold=True)
+
+# Brand mark next to logo
+draw.text((310, 100), "TOPNOCH", font=brand_font, fill=white)
+draw.text((310, 150), "ENTERPRISES LLC", font=brand_sub_font, fill=gold)
 
 # Headline
-draw.text((80, 290), "Structure. Capital.", font=title_font, fill=white)
-draw.text((80, 380), "Wealth.", font=title_font, fill=gold)
+draw.text((80, 310), "Structure. Capital.", font=title_font, fill=white)
+draw.text((80, 400), "Wealth.", font=title_font, fill=gold)
 
 # Tagline
 draw.text(
-    (80, 490),
+    (80, 510),
     "Become fundable. Acquire capital. Build lasting wealth.",
     font=sub_font,
     fill=(255, 255, 255, 200),
@@ -62,7 +78,7 @@ draw.text(
 url_text = "topnochwealth.com"
 url_bbox = draw.textbbox((0, 0), url_text, font=small_font)
 url_w = url_bbox[2] - url_bbox[0]
-draw.text((W - url_w - 80, H - 70), url_text, font=small_font, fill=gold)
+draw.text((W - url_w - 80, H - 50), url_text, font=small_font, fill=gold)
 
 img.save(OUT, "PNG", optimize=True)
 print(f"Saved: {OUT}")

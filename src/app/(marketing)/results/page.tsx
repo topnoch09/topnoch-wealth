@@ -234,7 +234,7 @@ function ResultsContent() {
             </div>
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-lg font-bold text-white mb-1">
-                Join the Topnoch Wealth Community
+                Join the Topnoch Enterprises Community
               </h3>
               <p className="text-white/60 text-sm">
                 Get ongoing support, resources, and access to our network of

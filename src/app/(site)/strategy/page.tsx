@@ -16,7 +16,7 @@ import {
 } from "@/components/SocialIcons";
 
 const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/topnochwealth/", icon: FacebookIcon },
+  { label: "Facebook", href: "https://www.facebook.com/mcole1973", icon: FacebookIcon },
   { label: "Instagram", href: "https://www.instagram.com/the_mauricecoleman/", icon: InstagramIcon },
   { label: "TikTok", href: "https://www.tiktok.com/@mauricecoleman277", icon: TikTokIcon },
   { label: "YouTube", href: "https://www.youtube.com/@mauricecoleman1914", icon: YouTubeIcon },
@@ -222,7 +222,7 @@ export default function ContactPage() {
             {/* Sidebar */}
             <div className="lg:col-span-2 space-y-8">
               {/* Book a Call */}
-              <div className="bg-surface rounded-2xl border border-border p-8">
+              <div id="book" className="bg-surface rounded-2xl border border-border p-8 scroll-mt-24">
                 <div className="w-12 h-12 gradient-gold rounded-xl flex items-center justify-center mb-4">
                   <Calendar size={22} className="text-royal-dark" />
                 </div>

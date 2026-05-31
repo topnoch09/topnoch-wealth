@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const FROM = process.env.RESEND_FROM_EMAIL || "Topnoch Wealth <onboarding@resend.dev>";
+const FROM = process.env.RESEND_FROM_EMAIL || "Topnoch Enterprises <onboarding@resend.dev>";
 const NOTIFY_TO = process.env.NOTIFY_EMAIL || "info@topnochwealth.com";
 
 function getClient() {
@@ -37,6 +37,8 @@ export async function sendAssessmentEmails(data: {
   obstacle?: string;
   stage?: string;
   amount?: string;
+  name?: string;
+  phone?: string;
 }) {
   const client = getClient();
   if (!client) return;
@@ -50,8 +52,8 @@ export async function sendAssessmentEmails(data: {
         data.stage ? `, you're at the <strong>${data.stage}</strong> stage` : ""
       }${data.amount ? `, and looking for around <strong>${data.amount}</strong> in funding` : ""}.</p>
       <p>The next step is to talk through your specific situation with Maurice and build your personalized roadmap.</p>
-      ${button("https://topnochwealth.com/strategy", "Book Your Free Strategy Call")}
-      <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Wealth Enterprises LLC</p>
+      ${button("https://topnochwealth.com/strategy#book", "Book Your Free Strategy Call")}
+      <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Enterprises LLC</p>
     </div>
   `;
 
@@ -59,7 +61,9 @@ export async function sendAssessmentEmails(data: {
     <div style="${baseStyle}">
       <h2 style="color:#0F2847">New Fundability Lead — Score ${data.score}</h2>
       <table style="border-collapse:collapse;width:100%">
+        <tr><td style="padding:8px;border-bottom:1px solid #eee"><strong>Name</strong></td><td style="padding:8px;border-bottom:1px solid #eee">${data.name || "—"}</td></tr>
         <tr><td style="padding:8px;border-bottom:1px solid #eee"><strong>Email</strong></td><td style="padding:8px;border-bottom:1px solid #eee">${data.email}</td></tr>
+        <tr><td style="padding:8px;border-bottom:1px solid #eee"><strong>Phone</strong></td><td style="padding:8px;border-bottom:1px solid #eee">${data.phone || "—"}</td></tr>
         <tr><td style="padding:8px;border-bottom:1px solid #eee"><strong>Score</strong></td><td style="padding:8px;border-bottom:1px solid #eee">${data.score}/100</td></tr>
         <tr><td style="padding:8px;border-bottom:1px solid #eee"><strong>Obstacle</strong></td><td style="padding:8px;border-bottom:1px solid #eee">${data.obstacle || "—"}</td></tr>
         <tr><td style="padding:8px;border-bottom:1px solid #eee"><strong>Stage</strong></td><td style="padding:8px;border-bottom:1px solid #eee">${data.stage || "—"}</td></tr>
@@ -100,8 +104,8 @@ export async function sendContactEmails(data: {
       <h1 style="color:#0F2847;font-size:24px">Thanks for reaching out, ${data.name}</h1>
       <p>I got your message and will personally get back to you within 24 hours.</p>
       <p>If your situation is time-sensitive, you can also book a free strategy call directly:</p>
-      ${button("https://topnochwealth.com/strategy", "Book a Strategy Call")}
-      <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Wealth Enterprises LLC</p>
+      ${button("https://topnochwealth.com/strategy#book", "Book a Strategy Call")}
+      <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Enterprises LLC</p>
     </div>
   `;
 
@@ -162,8 +166,8 @@ export async function sendPurchaseEmails(data: {
         data.ebooks.length > 1 ? "se files" : " file"
       } to your device — these links will keep working, but downloading now means you'll always have a copy.</p>
       <p>Need help applying what you learn?</p>
-      ${button("https://topnochwealth.com/strategy", "Book a Free Strategy Call")}
-      <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Wealth Enterprises LLC</p>
+      ${button("https://topnochwealth.com/strategy#book", "Book a Free Strategy Call")}
+      <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Enterprises LLC</p>
     </div>
   `;
 
@@ -182,7 +186,7 @@ export async function sendPurchaseEmails(data: {
     client.emails.send({
       from: FROM,
       to: data.email,
-      subject: `Your Topnoch Wealth ebook${data.ebooks.length > 1 ? "s are" : " is"} ready`,
+      subject: `Your Topnoch Enterprises ebook${data.ebooks.length > 1 ? "s are" : " is"} ready`,
       html: userHtml,
     }),
     client.emails.send({

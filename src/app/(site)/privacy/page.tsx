@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy Policy for Topnoch Wealth Enterprises LLC. Learn how we collect, use, and protect your personal information.",
+    "Privacy Policy for Topnoch Enterprises LLC. Learn how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
                 1. Introduction
               </h2>
               <p>
-                Topnoch Wealth Enterprises LLC (&quot;we,&quot;
+                Topnoch Enterprises LLC (&quot;we,&quot;
                 &quot;our,&quot; or &quot;us&quot;) respects your privacy and
                 is committed to protecting the personal information you share
                 with us. This Privacy Policy explains how we collect, use,

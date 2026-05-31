@@ -5,7 +5,7 @@ import { ArrowRight, TrendingUp, Award, Target, Users } from "lucide-react";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "See the results our clients have achieved with Topnoch Wealth Enterprises' framework. Real numbers, real transformations.",
+    "See the results our clients have achieved with Topnoch Enterprises' framework. Real numbers, real transformations.",
 };
 
 const stats = [

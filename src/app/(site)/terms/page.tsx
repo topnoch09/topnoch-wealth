@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms of Service for Topnoch Wealth Enterprises LLC. Please read these terms carefully before using our services.",
+    "Terms of Service for Topnoch Enterprises LLC. Please read these terms carefully before using our services.",
 };
 
 export default function TermsOfServicePage() {
@@ -28,7 +28,7 @@ export default function TermsOfServicePage() {
                 1. Acceptance of Terms
               </h2>
               <p>
-                By accessing and using the Topnoch Wealth Enterprises LLC
+                By accessing and using the Topnoch Enterprises LLC
                 website and services, you agree to be bound by these Terms of
                 Service. If you do not agree to these terms, please do not
                 use our services.
@@ -40,7 +40,7 @@ export default function TermsOfServicePage() {
                 2. Services Description
               </h2>
               <p>
-                Topnoch Wealth Enterprises LLC provides financial education,
+                Topnoch Enterprises LLC provides financial education,
                 credit repair guidance, business structure consulting,
                 funding strategy services, and digital educational products.
                 Our services are educational in nature and do not constitute
@@ -110,7 +110,7 @@ export default function TermsOfServicePage() {
               <p>
                 All content on this website, including text, graphics, logos,
                 images, and digital products, is the property of Topnoch
-                Wealth Enterprises LLC and is protected by copyright and
+                Enterprises LLC and is protected by copyright and
                 intellectual property laws. You may not reproduce,
                 distribute, or create derivative works without our prior
                 written consent.
@@ -122,7 +122,7 @@ export default function TermsOfServicePage() {
                 7. Limitation of Liability
               </h2>
               <p>
-                To the fullest extent permitted by law, Topnoch Wealth
+                To the fullest extent permitted by law, Topnoch
                 Enterprises LLC shall not be liable for any indirect,
                 incidental, special, consequential, or punitive damages
                 arising from your use of our website or services. Our total
@@ -136,7 +136,7 @@ export default function TermsOfServicePage() {
                 8. Indemnification
               </h2>
               <p>
-                You agree to indemnify and hold harmless Topnoch Wealth
+                You agree to indemnify and hold harmless Topnoch
                 Enterprises LLC, its officers, directors, employees, and
                 agents from any claims, damages, losses, or expenses arising
                 from your use of our services or violation of these terms.

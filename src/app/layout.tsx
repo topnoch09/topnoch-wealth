@@ -19,8 +19,8 @@ const OG_IMAGE = `${SITE_URL}/og-image.png`;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    template: "%s | Topnoch Wealth Enterprises LLC",
-    default: "Topnoch Wealth Enterprises LLC — Structure. Capital. Wealth.",
+    template: "%s | Topnoch Enterprises LLC",
+    default: "Topnoch Enterprises LLC — Structure. Capital. Wealth.",
   },
   description:
     "We help entrepreneurs become fundable, acquire capital, and build wealth — without predatory lending or guesswork.",
@@ -34,24 +34,24 @@ export const metadata: Metadata = {
     "capital acquisition",
   ],
   authors: [{ name: "Maurice L. Coleman" }],
-  creator: "Topnoch Wealth Enterprises LLC",
-  publisher: "Topnoch Wealth Enterprises LLC",
+  creator: "Topnoch Enterprises LLC",
+  publisher: "Topnoch Enterprises LLC",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Topnoch Wealth Enterprises LLC — Structure. Capital. Wealth.",
+    title: "Topnoch Enterprises LLC — Structure. Capital. Wealth.",
     description:
       "We help entrepreneurs become fundable, acquire capital, and build wealth — without predatory lending or guesswork.",
     type: "website",
     locale: "en_US",
-    siteName: "Topnoch Wealth Enterprises LLC",
+    siteName: "Topnoch Enterprises LLC",
     url: SITE_URL,
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Topnoch Wealth Enterprises" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Topnoch Enterprises" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Topnoch Wealth Enterprises LLC — Structure. Capital. Wealth.",
+    title: "Topnoch Enterprises LLC — Structure. Capital. Wealth.",
     description:
       "We help entrepreneurs become fundable, acquire capital, and build wealth.",
     images: [OG_IMAGE],

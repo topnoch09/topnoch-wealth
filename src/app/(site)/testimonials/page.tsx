@@ -5,7 +5,7 @@ import { Star, ArrowRight, Quote } from "lucide-react";
 export const metadata: Metadata = {
   title: "Testimonials",
   description:
-    "See what our clients have to say about Topnoch Wealth Enterprises. Real entrepreneurs, real results.",
+    "See what our clients have to say about Topnoch Enterprises. Real entrepreneurs, real results.",
 };
 
 const testimonials = [
@@ -61,7 +61,7 @@ const testimonials = [
     title: "Entrepreneur",
     photo: "/testimonials/client-1.jpg",
     quote:
-      "Topnoch Wealth showed me exactly what I was doing wrong. Within 6 months, I went from getting denied everywhere to a $50K business line of credit. Maurice's framework just makes sense.",
+      "Topnoch Enterprises showed me exactly what I was doing wrong. Within 6 months, I went from getting denied everywhere to a $50K business line of credit. Maurice's framework just makes sense.",
     rating: 5,
     highlight: "$50K business credit line",
   },
@@ -128,7 +128,7 @@ export default function TestimonialsPage() {
             </h1>
             <p className="text-lg text-white/70 leading-relaxed">
               Don&apos;t take our word for it. Here&apos;s what our clients
-              have to say about working with Topnoch Wealth Enterprises.
+              have to say about working with Topnoch Enterprises.
             </p>
           </div>
         </div>

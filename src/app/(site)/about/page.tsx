@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet Maurice L. Coleman — entrepreneur, financial strategist, and founder of Topnoch Wealth Enterprises LLC. Learn our mission and why we do what we do.",
+    "Meet Maurice L. Coleman — entrepreneur, financial strategist, and founder of Topnoch Enterprises LLC. Learn our mission and why we do what we do.",
 };
 
 const values = [
@@ -43,14 +43,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-3">
-              About Topnoch Wealth
+              About Topnoch Enterprises
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
               Built by an Entrepreneur,{" "}
               <span className="text-gradient-gold">for Entrepreneurs</span>
             </h1>
             <p className="text-lg text-white/70 leading-relaxed">
-              Topnoch Wealth Enterprises was founded with one simple belief: every
+              Topnoch Enterprises was founded with one simple belief: every
               entrepreneur deserves access to fair, legitimate funding — and
               the knowledge to build real wealth with it.
             </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
                   give entrepreneurs a clear, honest path to funding.
                 </p>
                 <p>
-                  That system became Topnoch Wealth Enterprises: a framework built on
+                  That system became Topnoch Enterprises: a framework built on
                   three pillars — <strong>Structure, Capital, and Wealth</strong>.
                   No shortcuts. No predatory lending. Just a proven roadmap
                   that works.

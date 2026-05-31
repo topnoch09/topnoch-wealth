@@ -22,7 +22,7 @@ const serviceLinks = [
 ];
 
 const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/topnochwealth/", icon: FacebookIcon },
+  { label: "Facebook", href: "https://www.facebook.com/mcole1973", icon: FacebookIcon },
   { label: "Instagram", href: "https://www.instagram.com/the_mauricecoleman/", icon: InstagramIcon },
   { label: "TikTok", href: "https://www.tiktok.com/@mauricecoleman277", icon: TikTokIcon },
   { label: "YouTube", href: "https://www.youtube.com/@mauricecoleman1914", icon: YouTubeIcon },
@@ -60,11 +60,11 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-4">
               <img
                 src="/logo.png"
-                alt="Topnoch Wealth Enterprises LLC"
+                alt="Topnoch Enterprises LLC"
                 className="w-11 h-11 object-contain brightness-0 invert"
               />
               <div className="flex flex-col leading-tight">
-                <span className="font-bold text-lg text-white">Topnoch Wealth</span>
+                <span className="font-bold text-lg text-white">Topnoch</span>
                 <span className="text-white/60 text-xs font-semibold tracking-wide">
                   Enterprises LLC
                 </span>
@@ -155,7 +155,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-sm">
-            &copy; {new Date().getFullYear()} Topnoch Wealth Enterprises LLC. All rights
+            &copy; {new Date().getFullYear()} Topnoch Enterprises LLC. All rights
             reserved.
           </p>
           <div className="flex gap-6 text-sm text-white/40">
