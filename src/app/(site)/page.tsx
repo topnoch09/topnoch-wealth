@@ -387,7 +387,7 @@ export default function HomePage() {
               </h2>
               <p className="text-white/70 text-lg leading-relaxed mb-6">
                 Entrepreneur, financial strategist, and founder of Topnoch
-                Wealth. Maurice has helped countless entrepreneurs navigate
+                Enterprises. Maurice has helped countless entrepreneurs navigate
                 the complex world of business funding and build real,
                 sustainable wealth.
               </p>
