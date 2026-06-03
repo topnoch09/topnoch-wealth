@@ -22,22 +22,29 @@ All services are owned by **Maurice Coleman** under `info@topnochwealth.com`.
 
 ---
 
-## 2. Domain (DNS — Squarespace)
+## 2. Domains (DNS — Squarespace)
 
-Domain: **topnochwealth.com** — registered with Squarespace, DNS managed there.
+**Primary domain:** `topnochenterprises.com` — registered at Whois.com, DNS delegated to Squarespace (same DNS panel as the old domain).
 
-DNS records currently set:
+**Legacy domain:** `topnochwealth.com` — kept as a 301 redirect to the primary (preserves printed QR codes, Facebook links, SEO). DNS unchanged.
+
+### topnochenterprises.com DNS (at Squarespace)
 
 | Host | Type | Value | Purpose |
 |------|------|-------|---------|
 | `@` | A | `76.76.21.21` | Apex → Vercel |
 | `www` | CNAME | `cname.vercel-dns.com` | www → Vercel |
-| `_vercel` | TXT | `vc-domain-verify=topnochwealth.com,69c0a4775cc6854187db` | Vercel apex verification |
-| `_vercel` | TXT | `vc-domain-verify=www.topnochwealth.com,a94671b56a255871b34c` | Vercel www verification |
 
-If you ever need to reverify or rotate, the values come from **Vercel → Project → Settings → Domains**.
+### topnochwealth.com DNS (legacy — unchanged)
 
-SSL is handled automatically by Vercel.
+| Host | Type | Value | Purpose |
+|------|------|-------|---------|
+| `@` | A | `76.76.21.21` | Apex → Vercel (rewrites to new domain) |
+| `www` | CNAME | `cname.vercel-dns.com` | www → Vercel (rewrites to new domain) |
+
+The 301 redirect from legacy → primary is configured in `vercel.json` (root of repo).
+
+SSL is handled automatically by Vercel for both domains.
 
 ---
 
@@ -45,7 +52,7 @@ SSL is handled automatically by Vercel.
 
 - **Project:** `topnoch-wealth` (ID: `prj_R4s0BF9GGMf1BGKOqqbVIxXytkAu`)
 - **Team:** `info-67975496` (ID: `team_eTx8DDhbZwKRCX9l9IKmFdCM`)
-- **Production URL alias:** `topnochwealth.com`, `www.topnochwealth.com`, `topnoch-wealth-seven.vercel.app`
+- **Production URL aliases:** `topnochenterprises.com` (primary), `www.topnochenterprises.com`, `topnochwealth.com` (301 → primary), `www.topnochwealth.com` (301 → primary), `topnoch-wealth-seven.vercel.app`
 
 ### Environment variables (set in Vercel dashboard, also in `.env.local` for local dev)
 

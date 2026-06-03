@@ -52,7 +52,7 @@ export async function sendAssessmentEmails(data: {
         data.stage ? `, you're at the <strong>${data.stage}</strong> stage` : ""
       }${data.amount ? `, and looking for around <strong>${data.amount}</strong> in funding` : ""}.</p>
       <p>The next step is to talk through your specific situation with Maurice and build your personalized roadmap.</p>
-      ${button("https://topnochwealth.com/strategy#book", "Book Your Free Strategy Call")}
+      ${button("https://topnochenterprises.com/strategy#book", "Book Your Free Strategy Call")}
       <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Enterprises LLC</p>
     </div>
   `;
@@ -104,7 +104,7 @@ export async function sendContactEmails(data: {
       <h1 style="color:#0F2847;font-size:24px">Thanks for reaching out, ${data.name}</h1>
       <p>I got your message and will personally get back to you within 24 hours.</p>
       <p>If your situation is time-sensitive, you can also book a free strategy call directly:</p>
-      ${button("https://topnochwealth.com/strategy#book", "Book a Strategy Call")}
+      ${button("https://topnochenterprises.com/strategy#book", "Book a Strategy Call")}
       <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Enterprises LLC</p>
     </div>
   `;
@@ -151,7 +151,7 @@ export async function sendPurchaseEmails(data: {
   const downloadList = data.ebooks
     .map(
       (e) =>
-        `<li style="margin:12px 0"><a href="https://topnochwealth.com${e.file}" style="color:#1A3A6B;font-weight:bold">${e.title}</a> — <a href="https://topnochwealth.com${e.file}" style="color:#666">Download PDF</a></li>`
+        `<li style="margin:12px 0"><a href="https://topnochenterprises.com${e.file}" style="color:#1A3A6B;font-weight:bold">${e.title}</a> — <a href="https://topnochenterprises.com${e.file}" style="color:#666">Download PDF</a></li>`
     )
     .join("");
 
@@ -166,7 +166,7 @@ export async function sendPurchaseEmails(data: {
         data.ebooks.length > 1 ? "se files" : " file"
       } to your device — these links will keep working, but downloading now means you'll always have a copy.</p>
       <p>Need help applying what you learn?</p>
-      ${button("https://topnochwealth.com/strategy#book", "Book a Free Strategy Call")}
+      ${button("https://topnochenterprises.com/strategy#book", "Book a Free Strategy Call")}
       <p style="margin-top:32px;color:#666;font-size:14px">— Maurice L. Coleman<br/>Topnoch Enterprises LLC</p>
     </div>
   `;

@@ -4,7 +4,7 @@ Marketing website for Topnoch Enterprises LLC — credit repair, business struct
 
 > Brand: company formerly known as **Topnoch Wealth Enterprises LLC**, renamed to **Topnoch Enterprises LLC** (May 2026). Domain `topnochwealth.com` retained.
 
-**Production:** [topnochwealth.com](https://topnochwealth.com)
+**Production:** [topnochenterprises.com](https://topnochenterprises.com)
 
 For credentials, deployment, and operational tasks, see **[HANDOFF.md](./HANDOFF.md)**.
 

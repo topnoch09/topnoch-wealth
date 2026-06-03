@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/thank-you/", "/results/", "/ebooks/"],
     },
-    sitemap: "https://topnochwealth.com/sitemap.xml",
+    sitemap: "https://topnochenterprises.com/sitemap.xml",
   };
 }

@@ -2,7 +2,7 @@ import qrcode
 from qrcode.constants import ERROR_CORRECT_H
 from PIL import Image, ImageDraw
 
-URL = "https://topnochwealth.com/services#products"
+URL = "https://topnochenterprises.com/services#products"
 LOGO_PATH = r"C:\Users\ea2en\Projects\top-noch-wealth\public\logo.png"
 OUTPUT_PATH = r"C:\Users\ea2en\Projects\top-noch-wealth\_tools\topnoch-services-qr.png"
 

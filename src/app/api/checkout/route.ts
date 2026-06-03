@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid product" }, { status: 400 });
   }
 
-  const origin = req.headers.get("origin") || "https://topnochwealth.com";
+  const origin = req.headers.get("origin") || "https://topnochenterprises.com";
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",

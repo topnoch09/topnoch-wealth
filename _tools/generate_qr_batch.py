@@ -17,7 +17,7 @@ JOBS = [
         "filename": "topnoch-stripe-2-royalblue-qr.png",
     },
     {
-        "url": "https://topnochwealth.com/assessment",
+        "url": "https://topnochenterprises.com/assessment",
         "color": (14, 107, 61),
         "filename": "topnoch-assessment-emerald-qr.png",
     },
