@@ -21,6 +21,11 @@ JOBS = [
         "color": (14, 107, 61),
         "filename": "topnoch-assessment-emerald-qr.png",
     },
+    {
+        "url": "https://buy.stripe.com/5kQfZh6Pc2QJbdMfxm5gc09",
+        "color": (139, 105, 20),
+        "filename": "topnoch-scw-method-gold-qr.png",
+    },
 ]
 
 for job in JOBS:
