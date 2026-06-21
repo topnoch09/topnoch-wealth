@@ -7,9 +7,9 @@ OUT_DIR = r"C:\Users\ea2en\Projects\top-noch-wealth\_tools"
 
 JOBS = [
     {
-        "url": "https://buy.stripe.com/3cI5kDflIfDv81A5WM5gc08",
+        "url": "https://buy.stripe.com/6oU8wPa1o4YR1Dcad25gc0a",
         "color": (0, 0, 0),
-        "filename": "topnoch-stripe-1-black-qr.png",
+        "filename": "topnoch-founders-club-mentorship-black-qr.png",
     },
     {
         "url": "https://buy.stripe.com/6oU7sLa1o8b381A1Gw5gc07",
@@ -22,9 +22,9 @@ JOBS = [
         "filename": "topnoch-assessment-emerald-qr.png",
     },
     {
-        "url": "https://buy.stripe.com/6oU8wPa1o4YR1Dcad25gc0a",
+        "url": "https://buy.stripe.com/5kQfZh6Pc2QJbdMfxm5gc09",
         "color": (139, 105, 20),
-        "filename": "topnoch-founders-club-mentorship-gold-qr.png",
+        "filename": "topnoch-scw-method-gold-qr.png",
     },
 ]
 
