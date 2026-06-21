@@ -22,9 +22,9 @@ JOBS = [
         "filename": "topnoch-assessment-emerald-qr.png",
     },
     {
-        "url": "https://buy.stripe.com/5kQfZh6Pc2QJbdMfxm5gc09",
+        "url": "https://buy.stripe.com/6oU8wPa1o4YR1Dcad25gc0a",
         "color": (139, 105, 20),
-        "filename": "topnoch-scw-method-gold-qr.png",
+        "filename": "topnoch-founders-club-mentorship-gold-qr.png",
     },
 ]
 
