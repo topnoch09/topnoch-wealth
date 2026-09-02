@@ -89,6 +89,12 @@ export default function RootLayout({
             </Script>
           </>
         )}
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a979c1ae27858db9ecb4aa2"
+          strategy="afterInteractive"
+          />
       </body>
     </html>
   );
