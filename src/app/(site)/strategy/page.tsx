@@ -22,7 +22,8 @@ const socialLinks = [
   { label: "YouTube", href: "https://www.youtube.com/@mauricecoleman1914", icon: YouTubeIcon },
 ];
 
-const GHL_CALENDAR_ID = process.env.NEXT_PUBLIC_GHL_CALENDAR_ID;
+const GHL_CALENDAR_ID =
+  process.env.NEXT_PUBLIC_GHL_CALENDAR_ID || "YrvCpy7Ksoj8vLN3PbfE";
 
 export default function ContactPage() {
   const [formState, setFormState] = useState<
