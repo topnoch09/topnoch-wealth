@@ -138,10 +138,10 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/assessment"
+                href="/strategy#book"
                 className="inline-flex items-center justify-center gap-2 gradient-gold text-royal-dark font-bold px-8 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
               >
-                Take Free Assessment
+                Book a Free Strategy Call
                 <ArrowRight size={20} />
               </Link>
               <Link
@@ -259,14 +259,14 @@ export default function HomePage() {
             Not Sure Where You Stand?
           </h2>
           <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-            Take our free 2-minute Fundability Assessment and get a personalized
-            score with a clear roadmap to capital.
+            Book a free 30-minute strategy call. We'll look at your profile
+            together and map your path to capital.
           </p>
           <Link
-            href="/assessment"
+            href="/strategy#book"
             className="inline-flex items-center gap-2 gradient-gold text-royal-dark font-bold px-10 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
           >
-            Start My Free Assessment
+            Book My Free Call
             <ArrowRight size={20} />
           </Link>
         </div>
@@ -425,14 +425,14 @@ export default function HomePage() {
             Ready to Find Out If You&apos;re Fundable?
           </h2>
           <p className="text-muted text-lg mb-8">
-            Take the free 2-minute assessment. No credit check. No commitment.
+            Book a free 30-minute strategy call. No credit check. No commitment.
             Just clarity.
           </p>
           <Link
-            href="/assessment"
+            href="/strategy#book"
             className="inline-flex items-center gap-2 gradient-gold text-royal-dark font-bold px-10 py-4 rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]"
           >
-            Start My Free Assessment
+            Book My Free Call
             <ArrowRight size={20} />
           </Link>
         </div>
