@@ -74,10 +74,10 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/assessment"
+            href="/strategy#book"
             className="gradient-gold text-royal-dark font-semibold px-6 py-2.5 rounded-lg transition-all hover:shadow-lg hover:shadow-gold/30 hover:scale-105 active:scale-95"
           >
-            Free Assessment
+            Book a Call
           </Link>
         </div>
 
@@ -112,11 +112,11 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/assessment"
+              href="/strategy#book"
               onClick={() => setIsOpen(false)}
               className="block gradient-gold text-royal-dark font-semibold px-6 py-3.5 rounded-lg text-center mt-4 hover:shadow-lg"
             >
-              Take Free Assessment
+              Book a Free Strategy Call
             </Link>
           </div>
         </div>
