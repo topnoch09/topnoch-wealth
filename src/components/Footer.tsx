@@ -39,15 +39,15 @@ export default function Footer() {
               Ready to Get Funded?
             </h3>
             <p className="text-royal-dark/80 mt-1">
-              Take the free 2-minute Fundability Assessment and get your
-              personalized roadmap.
+              Book a free 30-minute strategy call and get a clear plan to
+              capital.
             </p>
           </div>
           <Link
-            href="/assessment"
+            href="/strategy#book"
             className="bg-royal-dark text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-navy transition-colors shrink-0"
           >
-            Start Assessment →
+            Book a Call →
           </Link>
         </div>
       </div>
