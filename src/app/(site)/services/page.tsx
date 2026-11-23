@@ -21,25 +21,25 @@ import { CheckoutButton } from "@/components/ProductCheckout";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Credit repair, business structure setup, funding strategy, and 1-on-1 consultations. No matter where you are, we have a solution.",
+    "Fundability assessments, business structure setup, funding strategy, and 1-on-1 consultations. No matter where you are, we have a solution.",
 };
 
 const services = [
   {
-    id: "credit",
-    title: "Credit Repair & Building",
-    subtitle: "Fix what's holding you back",
+    id: "readiness",
+    title: "Fundability Assessment",
+    subtitle: "Know where you stand",
     description:
-      "Your credit score is the gatekeeper to every funding opportunity. We help you clean it up, build it out, and position yourself as fundable.",
+      "Lenders look at more than one number. We review your full profile and business setup against what lenders check, so you apply when you're ready.",
     icon: Shield,
     features: [
-      "Credit score analysis and strategy",
-      "Derogatory mark removal tactics",
-      "Tradeline building strategies",
-      "Score optimization for funding",
-      "Ongoing monitoring guidance",
+      "Lender-readiness review",
+      "Funding eligibility analysis",
+      "Gap analysis and action plan",
+      "Application timing strategy",
+      "Ongoing readiness check-ins",
     ],
-    cta: "Get the Credit Repair Guide",
+    cta: "Get the Fundability Guide",
     href: "#products",
   },
   {
@@ -64,7 +64,7 @@ const services = [
     title: "Funding Strategy & Acquisition",
     subtitle: "Get the capital you deserve",
     description:
-      "Once your structure and credit are solid, we connect you with the right funding sources — no predatory lending, no guesswork.",
+      "Once your structure and profile are solid, we connect you with the right funding sources — no predatory lending, no guesswork.",
     icon: TrendingUp,
     features: [
       "Personalized funding roadmap",
@@ -116,7 +116,7 @@ export default function ServicesPage() {
               <span className="text-gradient-gold">Get Funded</span>
             </h1>
             <p className="text-lg text-white/70 leading-relaxed">
-              From credit repair to capital acquisition — no matter where you
+              From business setup to capital acquisition — no matter where you
               are on your journey, we have a proven path forward.
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function ServicesPage() {
 
                 {/* Service illustration */}
                 <div style={isEven ? { direction: "ltr" } : undefined}>
-                  {service.id === "credit" && <CreditIllustration />}
+                  {service.id === "readiness" && <CreditIllustration />}
                   {service.id === "structure" && <StructureIllustration />}
                   {service.id === "funding" && <FundingIllustration />}
                 </div>
@@ -247,8 +247,8 @@ export default function ServicesPage() {
                 The Complete Bundle
               </h3>
               <p className="text-muted">
-                Get both guides and save. Everything you need from credit
-                repair to business funding — in one package.
+                Get both guides and save. Everything you need from business
+                setup to business funding — in one package.
               </p>
               <div className="flex items-center gap-3 mt-2">
                 <span className="text-2xl font-bold text-dark">$47</span>

@@ -176,7 +176,7 @@ export default function ContactPage() {
                         <option value="consultation">
                           Book a Consultation
                         </option>
-                        <option value="credit">Credit Repair</option>
+                        <option value="credit">Fundability Review</option>
                         <option value="funding">Funding Strategy</option>
                         <option value="products">Digital Products</option>
                         <option value="other">Other</option>

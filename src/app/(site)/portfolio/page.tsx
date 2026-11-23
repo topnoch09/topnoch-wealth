@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, TrendingUp, Award, Target, Users } from "lucide-react";
+import { ArrowRight, TrendingUp, Award, Users } from "lucide-react";
+import VideoTestimonials from "@/components/VideoTestimonials";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -11,18 +12,10 @@ export const metadata: Metadata = {
 const stats = [
   { label: "Entrepreneurs Helped", value: "150+", icon: Users },
   { label: "Capital Acquired", value: "$2M+", icon: TrendingUp },
-  { label: "Avg. Score Improvement", value: "120+ pts", icon: Target },
   { label: "Success Rate", value: "94%", icon: Award },
 ];
 
 const caseStudies = [
-  {
-    title: "From Denied to $50K Business Credit",
-    category: "Credit Repair + Funding",
-    description:
-      "An entrepreneur with a 580 credit score and multiple denials. Through our credit repair program and business structure setup, they raised their score to 720 and secured a $50K business line of credit within 6 months.",
-    metrics: ["580 → 720 credit score", "$50K credit line", "6 months"],
-  },
   {
     title: "Zero Structure to Fully Fundable",
     category: "Business Structure",
@@ -38,7 +31,7 @@ const caseStudies = [
     title: "Breaking the Predatory Lending Cycle",
     category: "Financial Strategy",
     description:
-      "An e-commerce owner trapped in merchant cash advances at 40%+ APR. We restructured their debt, repaired credit, and transitioned them to a traditional business loan at 8% — saving thousands annually.",
+      "An e-commerce owner trapped in merchant cash advances at 40%+ APR. We restructured their debt, rebuilt their business setup, and transitioned them to a traditional business loan at 8% — saving thousands annually.",
     metrics: [
       "40% → 8% interest rate",
       "Thousands saved annually",
@@ -73,7 +66,7 @@ export default function PortfolioPage() {
       {/* Stats */}
       <section className="py-16 bg-white border-b border-border">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {stats.map((stat) => {
               const Icon = stat.icon;
               return (
@@ -94,6 +87,8 @@ export default function PortfolioPage() {
           </p>
         </div>
       </section>
+
+      <VideoTestimonials />
 
       {/* Case Studies */}
       <section className="py-24 bg-white">

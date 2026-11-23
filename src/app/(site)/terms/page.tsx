@@ -41,7 +41,7 @@ export default function TermsOfServicePage() {
               </h2>
               <p>
                 Topnoch Enterprises LLC provides financial education,
-                credit repair guidance, business structure consulting,
+                fundability assessments, business structure consulting,
                 funding strategy services, and digital educational products.
                 Our services are educational in nature and do not constitute
                 financial, legal, or tax advice. We are not a licensed
@@ -56,7 +56,7 @@ export default function TermsOfServicePage() {
               <p>
                 While we strive to provide valuable guidance and resources,
                 we do not guarantee specific results, including but not
-                limited to credit score improvements, funding approvals, or
+                limited to funding approvals, funding amounts, or
                 revenue increases. Results vary depending on individual
                 circumstances, effort, and market conditions.
               </p>

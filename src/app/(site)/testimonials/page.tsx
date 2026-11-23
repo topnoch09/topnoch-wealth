@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Star, ArrowRight, Quote } from "lucide-react";
+import VideoTestimonials from "@/components/VideoTestimonials";
 
 export const metadata: Metadata = {
   title: "Testimonials",
@@ -84,15 +85,6 @@ const testimonials = [
     highlight: "Clear path to funding",
   },
   {
-    name: "Keisha D.",
-    title: "E-Commerce Owner",
-    photo: "/testimonials/client-4.jpg",
-    quote:
-      "I was stuck in predatory lending cycles. Maurice and his team helped me restructure, repair my credit, and access legitimate capital. I'm finally building real wealth.",
-    rating: 5,
-    highlight: "Escaped predatory lending",
-  },
-  {
     name: "Tyrone M.",
     title: "Real Estate Investor",
     photo: "/testimonials/client-5.jpg",
@@ -133,6 +125,8 @@ export default function TestimonialsPage() {
           </div>
         </div>
       </section>
+
+      <VideoTestimonials />
 
       {/* Testimonials Grid */}
       <section className="py-24 bg-white">

@@ -39,7 +39,7 @@ function getRecommendation(
       ctaHref: "/services#products",
       icon: Download,
       products: [
-        "The Fundability Reset (credit repair system)",
+        "The Fundability Reset",
         "The Fundable Business Blueprint (business structure)",
         "Save 50% with the bundle",
       ],
@@ -64,15 +64,15 @@ function getRecommendation(
 
   if (obstacle === "credit") {
     return {
-      title: "Let's Fix Your Credit First",
+      title: "Let's Get You Fundable First",
       description:
-        "Your credit is the #1 thing holding you back from funding. The good news? It's fixable. The Fundability Reset shows you exactly how to clean up and build your score — fast.",
+        "Your personal profile is the #1 thing holding you back from funding. The Fundability Reset shows you exactly what lenders look for and how to get ready to apply.",
       cta: "Get The Fundability Reset — $27",
       ctaHref: "/services#products",
       icon: Download,
       products: [
-        "Step-by-step credit repair system",
-        "Derogatory mark removal tactics",
+        "Step-by-step fundability system",
+        "Lender-readiness action plan",
         "Score optimization for funding approval",
       ],
     };
@@ -103,7 +103,7 @@ function getRecommendation(
       ctaHref: "/services#products",
       icon: Download,
       products: [
-        "The Fundability Reset (fix your credit)",
+        "The Fundability Reset",
         "The Fundable Business Blueprint (fix your structure)",
         "Save 50% with the bundle",
       ],
@@ -119,7 +119,7 @@ function getRecommendation(
     ctaHref: "/services#products",
     icon: Download,
     products: [
-      "The Fundability Reset (credit repair)",
+      "The Fundability Reset",
       "The Fundable Business Blueprint (business structure)",
       "Save 50% with the bundle",
     ],

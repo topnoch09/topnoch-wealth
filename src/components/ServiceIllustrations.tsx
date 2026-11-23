@@ -40,12 +40,12 @@ export function CreditIllustration() {
           {/* Needle pointing to green */}
           <line x1="0" y1="0" x2="42" y2="-50" stroke="#C9A84C" strokeWidth="3" strokeLinecap="round" />
           <circle cx="0" cy="0" r="6" fill="#C9A84C" />
-          {/* Score text */}
+          {/* Readiness text */}
           <text x="0" y="-18" textAnchor="middle" fill="white" fontSize="28" fontWeight="bold" fontFamily="system-ui">
-            780
+            A+
           </text>
           <text x="0" y="-4" textAnchor="middle" fill="#C9A84C" fontSize="9" fontWeight="600" fontFamily="system-ui">
-            EXCELLENT
+            FUNDABLE
           </text>
         </g>
 

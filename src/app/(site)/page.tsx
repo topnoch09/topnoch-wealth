@@ -45,11 +45,11 @@ const framework = [
 
 const services = [
   {
-    title: "Credit Repair & Building",
+    title: "Fundability Assessment",
     description:
-      "Get your credit score above 700 with our proven system. Remove derogatory marks, build tradelines, and create a fundable profile.",
+      "Find out where you stand before you apply. We review your profile and business setup against what lenders look for, then map your next steps.",
     icon: Shield,
-    href: "/services#credit",
+    href: "/services#readiness",
   },
   {
     title: "Business Structure Setup",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FundabilityQuiz from "@/components/FundabilityQuiz";
+import Script from "next/script";
 import { Shield, Clock, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -40,8 +40,20 @@ export default function FundabilityPage() {
           </p>
         </div>
 
-        {/* Quiz */}
-        <FundabilityQuiz />
+        {/* Assessment (GoHighLevel survey: Funding Assessment 2026) */}
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/survey/9wb4tMSjAbvXoLn0pSSe"
+            id="9wb4tMSjAbvXoLn0pSSe"
+            title="Funding Assessment"
+            scrolling="no"
+            style={{ border: "none", width: "100%", minHeight: "1700px" }}
+          />
+        </div>
+        <Script
+          src="https://link.msgsndr.com/js/form_embed.js"
+          strategy="afterInteractive"
+        />
 
         {/* Trust Badges */}
         <div className="flex flex-wrap items-center justify-center gap-8 mt-12">

@@ -1,6 +1,6 @@
 # Topnoch Enterprises LLC
 
-Marketing website for Topnoch Enterprises LLC — credit repair, business structure, and funding strategy services. Sells two ebooks ($27 each) and a bundle ($47) via Stripe Checkout, books strategy calls via GHL calendar, and captures leads via GHL webhooks.
+Marketing website for Topnoch Enterprises LLC — fundability assessments, business structure, and funding strategy services. Sells two ebooks ($27 each) and a bundle ($47) via Stripe Checkout, books strategy calls via GHL calendar, and captures leads via GHL webhooks.
 
 > Brand: company formerly known as **Topnoch Wealth Enterprises LLC**, renamed to **Topnoch Enterprises LLC** (May 2026). Domain `topnochwealth.com` retained.
 

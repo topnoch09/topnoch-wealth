@@ -16,7 +16,6 @@ const quickLinks = [
 
 const serviceLinks = [
   { label: "Fundability Assessment", href: "/assessment" },
-  { label: "Credit Repair", href: "/services#credit" },
   { label: "Business Structure", href: "/services#structure" },
   { label: "Funding Strategy", href: "/services#funding" },
 ];
