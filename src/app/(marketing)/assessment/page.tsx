@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Shield, Clock, Zap } from "lucide-react";
+import AssessmentEmbed from "@/components/AssessmentEmbed";
 
 export const metadata: Metadata = {
   title: "Free Fundability Assessment",
@@ -42,13 +43,7 @@ export default function FundabilityPage() {
 
         {/* Assessment (GoHighLevel survey: Funding Assessment 2026) */}
         <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/survey/9wb4tMSjAbvXoLn0pSSe"
-            id="9wb4tMSjAbvXoLn0pSSe"
-            title="Funding Assessment"
-            scrolling="no"
-            style={{ border: "none", width: "100%", minHeight: "1700px" }}
-          />
+          <AssessmentEmbed />
         </div>
         <Script
           src="https://link.msgsndr.com/js/form_embed.js"
